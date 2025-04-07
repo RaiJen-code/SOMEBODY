@@ -31,9 +31,12 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
 API_PORT = int(os.getenv("API_PORT", "8000"))
 
-# LLM settings
-LLM_MODEL = os.getenv("LLM_MODEL", "llama")
-LLM_MODEL_PATH = os.getenv("LLM_MODEL_PATH", os.path.join(MODELS_DIR, "llm"))
+# # LLM settings
+# LLM_MODEL = os.getenv("LLM_MODEL", "llama")
+# LLM_MODEL_PATH = os.getenv("LLM_MODEL_PATH", os.path.join(MODELS_DIR, "llm"))
+# Ollama settings
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api")
 
 # Speech settings
 SPEECH_RECOGNITION_MODEL = os.getenv("SPEECH_RECOGNITION_MODEL", "whisper-tiny")
@@ -55,5 +58,11 @@ VISION_MODEL_PATH = os.getenv(
 )
 CAMERA_INDEX = int(os.getenv("CAMERA_INDEX", "0"))
 
-# Internet connection
+# # Internet connection
+# USE_INTERNET = os.getenv("USE_INTERNET", "False").lower() in ("true", "1", "t")
+
+# Internet search settings
 USE_INTERNET = os.getenv("USE_INTERNET", "False").lower() in ("true", "1", "t")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+GOOGLE_CSE_ID = os.getenv("GOOGLE_CSE_ID", "")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY", "")

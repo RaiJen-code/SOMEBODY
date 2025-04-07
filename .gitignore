@@ -45,3 +45,8 @@ logs/
 # Sistem operasi
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development

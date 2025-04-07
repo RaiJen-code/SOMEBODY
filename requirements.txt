@@ -4,12 +4,50 @@ uvicorn==0.23.2
 pydantic==2.3.0
 python-dotenv==1.0.0
 websockets==11.0.3
+python-multipart==0.0.6
 
 # Utilitas
-numpy>=1.26.0
+numpy==1.26.0
 pillow==10.0.0
 requests==2.31.0
+tqdm==4.66.1
+aiofiles==23.2.1
+wikipedia==1.4.0
+google-api-python-client==2.84.0
 
 # Untuk prototyping awal
 ipykernel==6.25.2
 notebook==7.0.3
+
+# LLM with Ollama
+requests==2.31.0
+
+# Komponen Audio Processing (Placeholder untuk nantinya)
+# PyAudio==0.2.13
+# librosa==0.10.1
+# soundfile==0.12.1
+
+# Computer Vision (Placeholder untuk nantinya)
+# opencv-python==4.8.0.76
+
+# Machine Learning dan Model (Placeholder untuk nantinya)
+# torch==2.0.1
+# transformers==4.33.1
+# tensorflow==2.13.0
+
+# Speech Recognition
+openai-whisper==20231117
+soundfile==0.12.1
+pvporcupine==2.2.0
+
+PyAudio==0.2.14
+
+# Text-to-Speech
+pyttsx3==2.90
+
+# Computer Vision
+opencv-python==4.9.0.80
+pillow==10.0.0
+
+# Tambahkan di requirements.txt
+ultralytics==8.0.196  # YOLOv8

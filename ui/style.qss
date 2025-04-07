@@ -1,0 +1,100 @@
+/* Global styles */
+QMainWindow, QWidget {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Header frame */
+QFrame#header_frame {
+    background-color: #313244;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Main content frames */
+QFrame#conversation_frame, QFrame#camera_frame, QFrame#status_frame {
+    background-color: #313244;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+}
+
+/* Input field */
+QLineEdit {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+    border: 1px solid #6C7086;
+    border-radius: 5px;
+    padding: 8px;
+    selection-background-color: #89B4FA;
+}
+
+QLineEdit:focus {
+    border: 1px solid #89B4FA;
+}
+
+/* Push buttons */
+QPushButton {
+    background-color: #89B4FA;
+    color: #1E1E2E;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 2px;
+}
+
+QPushButton:hover {
+    background-color: #74C7EC;
+}
+
+QPushButton:pressed {
+    background-color: #89DCEB;
+}
+
+QPushButton#capture_button {
+    background-color: #89B4FA;
+}
+
+QPushButton#analyze_button {
+    background-color: #F5C2E7;
+}
+
+QPushButton#reset_button {
+    background-color: #89B4FA;
+}
+
+QPushButton#power_button {
+    background-color: #F38BA8;
+}
+
+/* Scroll area */
+QScrollArea {
+    background-color: #1E1E2E;
+    border-radius: 5px;
+    border: none;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #313244;
+    width: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #6C7086;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Status indicators */
+QLabel#status_indicator {
+    border-radius: 6px;
+}
