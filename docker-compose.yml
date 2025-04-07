@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  somebody:
+    build: .
+    container_name: somebody
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    ports:
+      - "8000:8000"  # API port
+    devices:
+      - "/dev/video0:/dev/video0"  # Akses ke webcam (mungkin berbeda di Windows)
+    environment:
+      - DEBUG=True
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - USE_INTERNET=False
+    restart: unless-stopped

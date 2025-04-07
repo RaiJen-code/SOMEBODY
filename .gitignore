@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Data dan model (biasanya berukuran besar)
+data/models/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.ggml
+
+# Log
+logs/
+*.log
+
+# Docker
+.docker/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
